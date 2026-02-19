@@ -3,8 +3,8 @@ services:
     build: .
     container_name: mariage-sami-prescilia
     restart: unless-stopped
-    expose:
-      - "3001"
+    ports:
+      - "3001:3001"
     volumes:
       # Persist RSVP data across container restarts
       - ./server/data:/app/server/data
@@ -12,14 +12,3 @@ services:
       - .env
     environment:
       - NODE_ENV=production
-      # nginx-proxy labels (si tu utilises jwilder/nginx-proxy)
-      - VIRTUAL_HOST=sami-prescillia.homika-studio.com
-      - VIRTUAL_PORT=3001
-      - LETSENCRYPT_HOST=sami-prescillia.homika-studio.com
-      - LETSENCRYPT_EMAIL=ton@email.fr
-    networks:
-      - nginx-proxy
-
-networks:
-  nginx-proxy:
-    external: true
