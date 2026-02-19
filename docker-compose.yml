@@ -4,7 +4,7 @@ services:
     container_name: mariage-sami-prescilia
     restart: unless-stopped
     ports:
-      - "3001:3001"
+      - "3002:3001"
     volumes:
       # Persist RSVP data across container restarts
       - ./server/data:/app/server/data
