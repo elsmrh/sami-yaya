@@ -166,8 +166,8 @@ app.delete('/api/rsvps/:id', authMiddleware, (req, res) => {
 if (process.env.NODE_ENV === 'production') {
     const DIST_PATH = path.resolve(__dirname, '..', 'dist');
     app.use(express.static(DIST_PATH));
-    // Catch-all: SPA index.html for non-API routes
-    app.get('*', (_req, res) => {
+    // Catch-all: SPA index.html pour toutes les routes non-API
+    app.use((_req, res) => {
         res.sendFile(path.join(DIST_PATH, 'index.html'));
     });
 }
