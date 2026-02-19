@@ -9,10 +9,10 @@ const Navbar: React.FC = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-    
+
     // Check initial scroll position
     handleScroll();
-    
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -31,17 +31,16 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav 
-      className={`fixed top-0 w-full z-50 transition-all duration-500 ${
-        isScrolled 
-          ? 'bg-white/95 backdrop-blur-md py-4 shadow-sm' 
+    <nav
+      className={`fixed top-0 w-full z-50 transition-all duration-500 ${isScrolled
+          ? 'bg-white/95 backdrop-blur-md py-4 shadow-sm'
           : 'bg-transparent py-6'
-      }`}
+        }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
-        <a 
-          href="#" 
+        <a
+          href="#"
           className={`font-script text-3xl md:text-4xl relative z-50 transition-colors duration-300 ${getTextColor()}`}
         >
           S & P
@@ -50,8 +49,8 @@ const Navbar: React.FC = () => {
         {/* Desktop Menu */}
         <div className={`hidden md:flex items-center gap-8 ${isScrolled ? 'text-wedding-dark' : 'text-white'}`}>
           {navLinks.map((link) => (
-            <a 
-              key={link.name} 
+            <a
+              key={link.name}
               href={link.href}
               className="font-sans text-xs uppercase tracking-[0.2em] hover:text-wedding-gold transition-colors pb-1 border-b-2 border-transparent hover:border-wedding-gold"
             >
@@ -61,7 +60,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Mobile Menu Toggle */}
-        <button 
+        <button
           className={`md:hidden z-50 relative transition-colors duration-300 ${getTextColor()}`}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Menu"
@@ -70,12 +69,11 @@ const Navbar: React.FC = () => {
         </button>
 
         {/* Mobile Overlay */}
-        <div className={`fixed inset-0 bg-wedding-cream/95 backdrop-blur-xl flex flex-col items-center justify-center gap-10 transition-all duration-500 ease-in-out md:hidden ${
-          isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'
-        }`}>
-           {navLinks.map((link) => (
-            <a 
-              key={link.name} 
+        <div className={`fixed inset-0 bg-wedding-cream/95 backdrop-blur-xl flex flex-col items-center justify-center gap-10 transition-all duration-500 ease-in-out md:hidden ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'
+          }`}>
+          {navLinks.map((link) => (
+            <a
+              key={link.name}
               href={link.href}
               onClick={() => setIsMenuOpen(false)}
               className="font-serif text-4xl text-wedding-dark hover:text-wedding-gold transition-colors"
@@ -84,8 +82,8 @@ const Navbar: React.FC = () => {
             </a>
           ))}
           <div className="absolute bottom-10 text-center">
-             <p className="font-script text-2xl text-wedding-gold">Sami & Prescilia</p>
-             <p className="font-sans text-xs text-wedding-dark/50 mt-2 uppercase tracking-widest">23 Octobre 2026</p>
+            <p className="font-script text-2xl text-wedding-gold">Sami & Prescillia</p>
+            <p className="font-sans text-xs text-wedding-dark/50 mt-2 uppercase tracking-widest">23 Octobre 2026</p>
           </div>
         </div>
       </div>

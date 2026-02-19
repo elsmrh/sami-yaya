@@ -52,7 +52,7 @@ const Hero: React.FC = () => {
             <span>2026</span>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-4 animate-fade-in-up" style={{ animationDelay: '1s' }}>
+          <div className="hidden md:flex md:flex-row items-center justify-center gap-4 animate-fade-in-up" style={{ animationDelay: '1s' }}>
             <a
               href="#details"
               className="w-full md:w-auto text-center border-2 border-wedding-gold/80 bg-wedding-gold/10 backdrop-blur-sm hover:bg-wedding-gold text-white transition-all duration-500 px-10 py-3.5 rounded-full font-sans text-[11px] md:text-xs tracking-[0.2em] uppercase hover:shadow-[0_0_30px_rgba(212,175,55,0.3)]"

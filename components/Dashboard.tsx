@@ -154,7 +154,7 @@ const Dashboard: React.FC<DashboardProps> = ({ token, onLogout }) => {
                     <div className="flex items-center gap-3">
                         <Heart className="w-6 h-6 text-wedding-gold fill-wedding-gold/30" />
                         <div>
-                            <h1 className="font-script text-2xl text-white">Sami & Prescilia</h1>
+                            <h1 className="font-script text-2xl text-white">Sami & Prescillia</h1>
                             <p className="text-white/30 text-xs font-sans tracking-wider uppercase">Dashboard RSVP</p>
                         </div>
                     </div>
@@ -256,8 +256,8 @@ const Dashboard: React.FC<DashboardProps> = ({ token, onLogout }) => {
                                 key={filter}
                                 onClick={() => setFilterAttendance(filter)}
                                 className={`px-4 py-2.5 rounded-lg text-sm font-sans transition-all ${filterAttendance === filter
-                                        ? 'bg-wedding-gold text-white'
-                                        : 'bg-white/5 text-white/40 hover:bg-white/10 hover:text-white/60'
+                                    ? 'bg-wedding-gold text-white'
+                                    : 'bg-white/5 text-white/40 hover:bg-white/10 hover:text-white/60'
                                     }`}
                             >
                                 {filter === 'all' ? 'Tous' : filter === 'yes' ? '✅ Présents' : '❌ Absents'}
@@ -323,8 +323,8 @@ const Dashboard: React.FC<DashboardProps> = ({ token, onLogout }) => {
                                             </td>
                                             <td className="px-5 py-4 text-center">
                                                 <span className={`inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-sans ${rsvp.attendance === 'yes'
-                                                        ? 'bg-emerald-500/10 text-emerald-400'
-                                                        : 'bg-red-500/10 text-red-400'
+                                                    ? 'bg-emerald-500/10 text-emerald-400'
+                                                    : 'bg-red-500/10 text-red-400'
                                                     }`}>
                                                     {rsvp.attendance === 'yes' ? '✅ Oui' : '❌ Non'}
                                                 </span>

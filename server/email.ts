@@ -93,11 +93,11 @@ export async function sendGuestConfirmation(rsvp: RsvpData): Promise<void> {
     await resend.emails.send({
       from: fromEmail,
       to: rsvp.email,
-      subject: '💍 Confirmation — Mariage de Sami & Prescilia',
+      subject: '💍 Confirmation — Mariage de Sami & Prescillia',
       html: `
         <div style="font-family: 'Georgia', serif; max-width: 600px; margin: 0 auto; padding: 40px 20px;">
           <h1 style="color: #D4AF37; text-align: center; font-size: 28px; margin-bottom: 10px;">
-            Sami & Prescilia
+            Sami & Prescillia
           </h1>
           <p style="text-align: center; color: #8DA399; font-size: 14px; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 30px;">
             Confirmation de votre réponse

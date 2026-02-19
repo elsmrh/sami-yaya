@@ -62,7 +62,7 @@ const AdminLogin: React.FC<AdminLoginProps> = ({ onLogin, onBack }) => {
                         </div>
                         <h1 className="font-script text-4xl text-white mb-2">Espace Admin</h1>
                         <p className="text-white/40 font-sans text-sm tracking-wider uppercase">
-                            Sami & Prescilia
+                            Sami & Prescillia
                         </p>
                     </div>
 

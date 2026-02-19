@@ -1,65 +1,69 @@
 <!DOCTYPE html>
 <html lang="fr" class="scroll-smooth scroll-pt-24">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mariage de Sami & Prescilia — 23 Octobre 2026</title>
-    <meta name="description" content="Rejoignez-nous pour célébrer notre mariage le 23 octobre 2026. Confirmez votre présence et découvrez tous les détails de notre grand jour." />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" href="/favicon.svg" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mariage de Sami & Prescillia — 23 Octobre 2026</title>
+  <meta name="description"
+    content="Rejoignez-nous pour célébrer notre mariage le 23 octobre 2026. Confirmez votre présence et découvrez tous les détails de notre grand jour." />
 
-    <!-- Open Graph / Social sharing -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Mariage de Sami & Prescilia — 23 Octobre 2026" />
-    <meta property="og:description" content="Rejoignez-nous pour célébrer notre mariage le 23 octobre 2026." />
-    <meta property="og:image" content="/images/og-image.jpg" />
-    <meta property="og:locale" content="fr_FR" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Mariage de Sami & Prescilia" />
-    <meta name="twitter:image" content="/images/og-image.jpg" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              serif: ['"Cormorant Garamond"', 'serif'],
-              script: ['"Great Vibes"', 'cursive'],
-              sans: ['"Montserrat"', 'sans-serif'],
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/favicon.svg" />
+
+  <!-- Open Graph / Social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mariage de Sami & Prescillia — 23 Octobre 2026" />
+  <meta property="og:description" content="Rejoignez-nous pour célébrer notre mariage le 23 octobre 2026." />
+  <meta property="og:image" content="/images/og-image.jpg" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mariage de Sami & Prescillia" />
+  <meta name="twitter:image" content="/images/og-image.jpg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            script: ['"Great Vibes"', 'cursive'],
+            sans: ['"Montserrat"', 'sans-serif'],
+          },
+          colors: {
+            wedding: {
+              gold: '#D4AF37',
+              cream: '#F9F7F2',
+              sage: '#8DA399',
+              dark: '#2C3E50',
+              rose: '#E6D7D5'
+            }
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 1s ease-out forwards',
+            'fade-in': 'fadeIn 0.5s ease-out forwards',
+            'spin-slow': 'spin 8s linear infinite',
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
             },
-            colors: {
-              wedding: {
-                gold: '#D4AF37',
-                cream: '#F9F7F2',
-                sage: '#8DA399',
-                dark: '#2C3E50',
-                rose: '#E6D7D5'
-              }
-            },
-            animation: {
-              'fade-in-up': 'fadeInUp 1s ease-out forwards',
-              'fade-in': 'fadeIn 0.5s ease-out forwards',
-              'spin-slow': 'spin 8s linear infinite',
-            },
-            keyframes: {
-              fadeInUp: {
-                '0%': { opacity: '0', transform: 'translateY(20px)' },
-                '100%': { opacity: '1', transform: 'translateY(0)' },
-              },
-              fadeIn: {
-                '0%': { opacity: '0' },
-                '100%': { opacity: '1' },
-              }
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
             }
           }
         }
       }
-    </script>
+    }
+  </script>
   <script type="importmap">
 {
   "imports": {
@@ -71,10 +75,12 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="/index.css">
 </head>
-  <body class="bg-wedding-cream text-wedding-dark antialiased">
-    <div id="root"></div>
+
+<body class="bg-wedding-cream text-wedding-dark antialiased">
+  <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
+
 </html>
