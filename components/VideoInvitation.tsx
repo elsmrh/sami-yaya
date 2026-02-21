@@ -22,8 +22,9 @@ const VideoInvitation: React.FC = () => {
                             controls
                             playsInline
                             preload="metadata"
+                            poster="/images/video-poster.jpg"
                         >
-                            <source src="/videos/invitation.mp4#t=17" type="video/mp4" />
+                            <source src="/videos/invitation.mp4" type="video/mp4" />
                             Votre navigateur ne supporte pas la lecture vidéo.
                         </video>
                     </div>
