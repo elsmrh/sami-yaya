@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4 flex flex-col items-center gap-8 text-center">
 
         {/* Titre */}
-        <h2 className="font-script text-5xl text-wedding-gold">Sami & Prescillia</h2>
+        <h2 className="font-script text-5xl text-wedding-gold">Prescillia & Sami</h2>
 
         {/* Date et Lieu */}
         <p className="font-sans text-xs tracking-[0.2em] opacity-60 uppercase">

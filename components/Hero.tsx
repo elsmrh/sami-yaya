@@ -32,9 +32,9 @@ const Hero: React.FC = () => {
           </p>
 
           <h1 className="font-script mb-5 md:mb-8 text-5xl md:text-8xl lg:text-9xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] leading-[1.1] animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-            Sami <span className="text-wedding-gold">&</span>
+            Prescillia <span className="text-wedding-gold">&</span>
             <br className="hidden md:block" />
-            <span> Prescillia</span>
+            <span> Sami </span>
           </h1>
 
           {/* Decorative separator */}

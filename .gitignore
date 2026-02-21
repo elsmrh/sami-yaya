@@ -27,5 +27,8 @@ dist-ssr
 *.sln
 *.sw?
 
+# Video files — trop lourds pour Git, utiliser SCP
+public/videos/
+
 # RSVP data — données privées
 server/data/rsvps.json

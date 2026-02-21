@@ -1,5 +1,4 @@
 import React from 'react';
-import { Play } from 'lucide-react';
 
 const VideoInvitation: React.FC = () => {
     return (
@@ -17,31 +16,17 @@ const VideoInvitation: React.FC = () => {
                 </div>
 
                 <div className="max-w-4xl mx-auto">
-                    {/* Placeholder Vidéo */}
-                    <div className="relative aspect-video bg-wedding-dark rounded-2xl overflow-hidden shadow-2xl group cursor-pointer border hover:border-wedding-gold/30 transition-colors duration-500">
-                        {/* Image de fond (placeholder) - à remplacer plus tard par une miniature de la vidéo */}
-                        <img
-                            src="/images/mairiefleurs.jpg"
-                            alt="Video Thumbnail"
-                            className="w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700"
-                        />
-
-                        {/* overlay sombre */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-wedding-dark/80 via-wedding-dark/20 to-transparent" />
-
-                        {/* Bouton Play */}
-                        <div className="absolute inset-0 flex items-center justify-center">
-                            <div className="w-20 h-20 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/20 group-hover:bg-wedding-gold/20 group-hover:border-wedding-gold/50 transition-all duration-300 group-hover:scale-110 shadow-[0_0_30px_rgba(0,0,0,0.3)]">
-                                <Play className="w-8 h-8 text-white ml-2 opacity-90 group-hover:text-wedding-gold transition-colors" />
-                            </div>
-                        </div>
-
-                        {/* Texte informatif en bas */}
-                        <div className="absolute bottom-6 left-0 right-0 text-center">
-                            <p className="font-serif italic text-white/80 text-lg md:text-xl">
-                                La vidéo sera bientôt disponible...
-                            </p>
-                        </div>
+                    <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-wedding-gold/10">
+                        <video
+                            className="w-full h-full object-cover"
+                            controls
+                            playsInline
+                            preload="metadata"
+                            poster="/images/mairiefleurs.jpg"
+                        >
+                            <source src="/videos/invitation.mp4" type="video/mp4" />
+                            Votre navigateur ne supporte pas la lecture vidéo.
+                        </video>
                     </div>
                 </div>
             </div>
